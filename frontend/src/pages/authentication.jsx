@@ -48,7 +48,8 @@ export default function Authentication() {
         setPassword("");
       }
     } catch (err) {
-      console.log(err);
+      // console.log(err);
+      // return;
       let message = err.response.data.message;
       setError(message);
     }
